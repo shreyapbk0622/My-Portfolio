@@ -4,7 +4,7 @@ body, html {
     padding: 0;
     height: 100%;
     width: 100%;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: 'Comic Sans MS';
     display: flex;
     justify-content: flex-start; /* Moves content to the left */
     align-items: center;
@@ -264,7 +264,7 @@ body.education-page {
     /* background: linear-gradient(to bottom right, #c8edf2, #edf2be); */
     background: url('images/education-bg.jpg') no-repeat center center/cover; 
     background-attachment: fixed;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: 'Comic Sans MS';
 }
 
 /* Back Home Container */
@@ -422,7 +422,7 @@ body.education-page {
 body.experience-page {
     background: url('images/experience-bg.jpg') no-repeat center center/cover;
     background-attachment: fixed;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: 'Comic Sans MS';
 }
 
 /* Experience Container */
