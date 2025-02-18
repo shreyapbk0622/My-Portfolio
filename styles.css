@@ -551,11 +551,11 @@ body.experience-page {
         flex-direction: column;  /* Stack content vertically */
         align-items: center;
         text-align: center;
-        padding: 15px;
+        padding: 10px;
     }
 
     .experience-logo, .education-logo {
-        width: 80px;  /* Reduce logo sizes */
+        width: 20px;  /* Reduce logo sizes */
         margin-bottom: 10px;
     }
 
