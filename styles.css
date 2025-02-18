@@ -500,41 +500,54 @@ body.experience-page {
 
 /* === MOBILE RESPONSIVENESS === */
 @media screen and (max-width: 768px) {
-    
-    /* Fix Content Box for Mobile */
+
+    /* Make the Content Box Fit Mobile */
     .content-box {
-        width: 90%;  /* Makes it almost full-width */
-        max-width: none;  /* No max width restriction */
-        margin: 10px auto;  /* Centers it */
-        padding: 20px;  /* Adjust spacing */
+        width: 90%;  /* Ensure it doesn't go off-screen */
+        max-width: none;  /* Remove max width restriction */
+        margin: 20px auto;  /* Center it */
+        padding: 15px;  /* Reduce padding for small screens */
+        font-size: 14px;
     }
 
-    /* Adjust Title (Hey There People :D) */
+    /* Adjust Title */
     .title {
-        font-size: 24px;  /* Reduce font size */
+        font-size: 24px;  /* Reduce title size */
         text-align: center;
     }
 
-    /* Adjust Intro Text */
-    .intro {
-        font-size: 14px;  /* Make text readable */
-        text-align: center;
+    /* Fix "Hey There People :D" Spacing */
+    .giggle-text {
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;  /* Ensures words wrap correctly */
+    }
+
+    /* Adjust the Contact Icons */
+    .contact {
+        flex-direction: column;  /* Stack icons vertically */
+        align-items: center;
+    }
+
+    .contact img {
+        width: 40px;  /* Make icons smaller */
     }
 
     /* Fix Experience & Education Sections */
     .experience-box, .education-box {
-        flex-direction: column;  /* Stack instead of side-by-side */
+        flex-direction: column;  /* Stack content vertically */
         align-items: center;
         text-align: center;
         padding: 15px;
     }
 
     .experience-logo, .education-logo {
-        width: 80px;  /* Resize logos */
+        width: 80px;  /* Reduce logo sizes */
         margin-bottom: 10px;
     }
 
-    /* Fix Dark Mode Toggle Position */
+    /* Adjust Dark Mode Toggle */
     .dark-mode-toggle {
         position: fixed;
         top: 15px;
@@ -542,17 +555,5 @@ body.experience-page {
         width: 40px;
         height: 40px;
     }
-
-    /* Fix Contact Icons */
-    .contact {
-        display: flex;
-        flex-direction: column;  /* Stack icons vertically */
-        align-items: center;
-        gap: 10px;
-    }
-
-    .contact img {
-        width: 40px;  /* Adjust icon sizes */
-    }
-
 }
+
