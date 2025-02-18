@@ -501,7 +501,7 @@ body.experience-page {
 /* === MOBILE RESPONSIVENESS === */
 @media screen and (max-width: 768px) {
 
-    body {
+    body, html {
         font-family: 'Comic Sans MS';
     }
     
@@ -548,7 +548,7 @@ body.experience-page {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 162%;  /* Moves content slightly down to make space for the logo */
+        padding-top: 250%;  /* Moves content slightly down to make space for the logo */
         overflow-y: auto;  /* Enables scrolling */
     }
     
@@ -582,7 +582,7 @@ body.experience-page {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 258%;  /* Moves content slightly down to make space for the logo */
+        padding-top: 250%;  /* Moves content slightly down to make space for the logo */
         overflow-y: auto;  /* Enables scrolling */
     }
     
