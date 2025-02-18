@@ -502,14 +502,15 @@ body.experience-page {
 @media screen and (max-width: 768px) {
 
     body {
-        font-family: 'Poppins', sans-serif;  /* Reapply font */
+        font-family: 'Comic Sans MS', cursive, sans-serif;
     }
 
     /* Make the Content Box Fit Mobile */
     .content-box {
         width: 90%;  /* Ensure it doesn't go off-screen */
         max-width: none;  /* Remove max width restriction */
-        margin: 20px auto;  /* Center it */
+       /* margin: 20px auto;  /* Center it */
+        margin-top: -50px;
         padding: 15px;  /* Reduce padding for small screens */
         font-size: 14px;
     }
@@ -558,13 +559,11 @@ body.experience-page {
         margin-bottom: 10px;
     }
 
-    /* Adjust Dark Mode Toggle */
-    .dark-mode-toggle {
-        position: fixed;
-        top: 15px;
-        right: 15px;
-        width: 40px;
-        height: 40px;
-    }
+/* Enable scrolling for education & experience pages */
+    .education-page, .experience-page {
+        overflow-y: auto;  /* Allows vertical scrolling */
+        height: 100vh;  /* Full viewport height */
 }
+
+
 
