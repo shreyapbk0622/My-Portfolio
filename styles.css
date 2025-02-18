@@ -1,0 +1,500 @@
+/* Reset styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    display: flex;
+    justify-content: flex-start; /* Moves content to the left */
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Fullscreen background image */
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('images/newprofile.jpg') no-repeat center center/cover;
+    /* background-size: contain; Ensures full image is visible */
+    background-position: 80% 60%; /* moving image, first value to right and left, second value up and down */
+    z-index: -1;
+}
+
+/* White content box */
+.content-box {
+    background-color: rgb(238, 222, 236);
+    width: 40%;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(224, 99, 99, 0.2);
+    text-align: left;
+    margin-left: 5%; 
+    margin-top: 50px; /* Restore original spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align content properly */
+}
+
+/* Ensure Giggle Text stays inside the box */
+/* Fix Giggling Text Layout */
+.giggle-text {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    font-size: 32px;
+    font-weight: bold;
+    color: #02542c;
+    margin-bottom: 10px;
+    gap: 5px; /* Add spacing between letters */
+}
+
+/* Animate each letter */
+.giggle-text span {
+    display: inline-block;
+    animation: giggle 0.8s ease-in-out forwards;
+}
+
+/* New Animation - Blur to Clear Pop Effect */
+/* Keyframes for Giggle Animation */
+@keyframes giggle {
+    0% { transform: rotate(0deg); opacity: 1; }
+    25% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
+}
+
+
+/* Delay Each Letter */
+.giggle-text span:nth-child(1) { animation-delay: 0.1s; }
+.giggle-text span:nth-child(2) { animation-delay: 0.2s; }
+.giggle-text span:nth-child(3) { animation-delay: 0.3s; }
+.giggle-text span:nth-child(4) { animation-delay: 0.4s; }
+.giggle-text span:nth-child(5) { animation-delay: 0.5s; }
+.giggle-text span:nth-child(6) { animation-delay: 0.6s; }
+.giggle-text span:nth-child(7) { animation-delay: 0.7s; }
+.giggle-text span:nth-child(8) { animation-delay: 0.8s; }
+.giggle-text span:nth-child(9) { animation-delay: 0.9s; }
+.giggle-text span:nth-child(10) { animation-delay: 1.0s; }
+.giggle-text span:nth-child(11) { animation-delay: 1.1s; }
+.giggle-text span:nth-child(12) { animation-delay: 1.2s; }
+.giggle-text span:nth-child(13) { animation-delay: 1.3s; }
+.giggle-text span:nth-child(14) { animation-delay: 1.4s; }
+.giggle-text span:nth-child(15) { animation-delay: 1.5s; }
+
+/* Text styling */
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #02542c;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.intro {
+    font-size: 16px;
+    font-weight: normal;
+    color: #670606;
+    margin-bottom: 15px;
+}
+
+/* Contact section styling */
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between icons */
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* LinkedIn Icon */
+.contact .linkedin-icon {
+    width: 36px;  /* Slightly larger width */
+    height: 36px; /* Maintain height consistency */
+    object-fit: contain;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* GitHub Icon */
+.contact .github-icon {
+    width: 48px;  /* Slightly smaller width */
+    height: 48px; /* Maintain height consistency */
+    object-fit: contain;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.contact .education-icon {
+    width: 50px;  /* Ensures uniform width */
+    height: 50px; /* Ensures uniform height */
+    object-fit: contain;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.contact .experience-icon {
+    width: 50px;  /* Same as education icon */
+    height: 50px; /* Same as education icon */
+    object-fit: contain;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hover Effects */
+.contact img:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+    opacity: 0.8;
+}
+
+.contact .education-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.contact .experience-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+.contact .resume-icon {
+    width: 45px;  /* Adjust width */
+    height: 45px; /* Adjust height */
+    object-fit: contain;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hover effect */
+.contact .resume-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+
+/* Go Back Button Styling */
+.go-back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.go-back img {
+    width: 100%;
+    height: auto;
+}
+
+/* Hover Effect */
+.go-back:hover {
+    transform: scale(1.2);
+}
+
+
+/* Education Page Styling */
+.education-container {
+    text-align: center;
+    margin: 50px auto;
+    width: 80%;
+}
+
+.edu-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #5a0212; 
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.education-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #cfe5e6, #e7d9e9);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.education-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.edu-logo {
+    width: 200px;  /* Adjust logo size */
+    height: auto;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+}
+
+.edu-logo:hover {
+    transform: rotate(10deg) scale(1.1);
+    opacity: 0.9;
+}
+
+/* Text Styling */
+.edu-details {
+    text-align: left;
+    width: 75%;
+}
+
+.edu-details h2 {
+    color: #af2c18;
+    font-size: 24px;
+}
+
+.edu-details p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2c0554;
+}
+
+.edu-details ul {
+    padding-left: 20px;
+    font-size: 14px;
+    color: #2c0554;
+}
+
+body.education-page {
+    /* background: linear-gradient(to bottom right, #c8edf2, #edf2be); */
+    background: url('images/education-bg.jpg') no-repeat center center/cover; 
+    background-attachment: fixed;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+/* Back Home Container */
+.back-home-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-align: center;
+}
+
+/* Back Home Icon */
+.back-home img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Animation for Go Back Effect */
+.back-home img:hover {
+    animation: goBackAnim 0.8s infinite alternate;
+}
+
+/* Keyframes for Backward Movement */
+@keyframes goBackAnim {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-10px);
+    }
+}
+
+/* Back Home Text */
+.back-home-text {
+    font-size: 14px;
+    font-weight: bold;
+    color: #02542c;
+    margin-top: 5px;
+}
+
+/* Giggling Effect for Education Title */
+.edu-title span {
+    display: inline-block;
+    font-size: 36px;
+    font-weight: bold;
+    color: #640211;
+    text-transform: uppercase;
+    animation: giggle 0.8s ease-in-out forwards;
+}
+
+/* Delay Each Letter */
+.edu-title span:nth-child(1) { animation-delay: 0.1s; }
+.edu-title span:nth-child(2) { animation-delay: 0.2s; }
+.edu-title span:nth-child(3) { animation-delay: 0.3s; }
+.edu-title span:nth-child(4) { animation-delay: 0.4s; }
+.edu-title span:nth-child(5) { animation-delay: 0.5s; }
+.edu-title span:nth-child(6) { animation-delay: 0.6s; }
+.edu-title span:nth-child(7) { animation-delay: 0.7s; }
+.edu-title span:nth-child(8) { animation-delay: 0.8s; }
+.edu-title span:nth-child(9) { animation-delay: 0.9s; }
+
+/* Experience Page Styles */
+.experience-container {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.experience-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #7ab8d3; /* Deep blue */
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Experience Box */
+.experience-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #ffffff, #f7f7f7);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.experience-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Company Logo */
+.company-logo {
+    width: 150px;  /* Adjust size */
+    height: auto;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+}
+
+.company-logo:hover {
+    transform: rotate(5deg) scale(1.1);
+    opacity: 0.9;
+}
+
+/* Experience Details */
+.experience-details {
+    text-align: left;
+    width: 75%;
+}
+
+.experience-details h2 {
+    color: #560519;
+    font-size: 24px;
+}
+
+.experience-details p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #234e0a;
+}
+
+.experience-details ul {
+    padding-left: 20px;
+    font-size: 14px;
+    color: #030303;
+}
+
+/* Back Home Button */
+.back-home-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-align: center;
+}
+
+.back-home img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.back-home img:hover {
+    animation: goBackAnim 0.8s infinite alternate;
+}
+
+@keyframes goBackAnim {
+    from { transform: translateX(0); }
+    to { transform: translateX(-10px); }
+}
+
+/* Experience Page Background */
+body.experience-page {
+    background: url('images/experience-bg.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+/* Experience Container */
+.experience-container {
+    text-align: center;
+    margin: 50px auto;
+    width: 80%;
+}
+
+/* Experience Title */
+.experience-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #7ab8d3; /* Deep Blue */
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* Experience Box Styling */
+.experience-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #e2d4d4, #9fd9d9); /* Light green gradient */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.experience-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Experience Logo (Company Logos) */
+.exp-logo {
+    width: 100px;  /* Adjust logo size */
+    height: auto;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease;
+}
+
+.exp-logo:hover {
+    transform: rotate(5deg) scale(1.1);
+    opacity: 0.9;
+}
+
+/* Experience Text Section */
+.exp-details {
+    text-align: left;
+    width: 75%;
+}
+
+/* Experience Company Name */
+.exp-details h2 {
+    color: #591202;
+    font-size: 24px;
+}
+
+/* Experience Role */
+.exp-details p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #113806;
+}
+
+/* Experience Points */
+.exp-details ul {
+    padding-left: 20px;
+    font-size: 14px;
+    color: #222;
+}
+
