@@ -543,8 +543,6 @@ body.experience-page {
         width: 40px;  /* Adjust icon size */
         height: auto;
     }
-}
-
 
     /* Fix Experience & Education Sections */
     .experience-box, .education-box {
@@ -565,5 +563,5 @@ body.experience-page {
         height: 100vh;  /* Full viewport height */
 }
 
-
+}
 
