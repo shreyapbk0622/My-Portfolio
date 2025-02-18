@@ -501,6 +501,10 @@ body.experience-page {
 /* === MOBILE RESPONSIVENESS === */
 @media screen and (max-width: 768px) {
 
+    body {
+        font-family: 'Poppins', sans-serif;  /* Reapply font */
+    }
+
     /* Make the Content Box Fit Mobile */
     .content-box {
         width: 90%;  /* Ensure it doesn't go off-screen */
