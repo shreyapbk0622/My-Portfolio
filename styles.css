@@ -524,15 +524,22 @@ body.experience-page {
         flex-wrap: wrap;  /* Ensures words wrap correctly */
     }
 
-    /* Adjust the Contact Icons */
     .contact {
-        flex-direction: column;  /* Stack icons vertically */
+        display: flex;
+        flex-direction: row;  /* Ensures horizontal alignment */
+        flex-wrap: wrap;  /* Prevents icons from breaking into a vertical line */
+        justify-content: center;  /* Centers icons properly */
         align-items: center;
+        gap: 10px;  /* Adds space between icons */
     }
 
-    .contact img {
-        width: 40px;  /* Make icons smaller */
+    /* Ensure icons are properly sized on mobile */
+    .contact a img {
+        width: 40px;  /* Adjust icon size */
+        height: auto;
     }
+}
+
 
     /* Fix Experience & Education Sections */
     .experience-box, .education-box {
