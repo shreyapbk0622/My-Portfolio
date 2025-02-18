@@ -498,3 +498,61 @@ body.experience-page {
     color: #222;
 }
 
+/* === MOBILE RESPONSIVENESS === */
+@media screen and (max-width: 768px) {
+    
+    /* Fix Content Box for Mobile */
+    .content-box {
+        width: 90%;  /* Makes it almost full-width */
+        max-width: none;  /* No max width restriction */
+        margin: 10px auto;  /* Centers it */
+        padding: 20px;  /* Adjust spacing */
+    }
+
+    /* Adjust Title (Hey There People :D) */
+    .title {
+        font-size: 24px;  /* Reduce font size */
+        text-align: center;
+    }
+
+    /* Adjust Intro Text */
+    .intro {
+        font-size: 14px;  /* Make text readable */
+        text-align: center;
+    }
+
+    /* Fix Experience & Education Sections */
+    .experience-box, .education-box {
+        flex-direction: column;  /* Stack instead of side-by-side */
+        align-items: center;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .experience-logo, .education-logo {
+        width: 80px;  /* Resize logos */
+        margin-bottom: 10px;
+    }
+
+    /* Fix Dark Mode Toggle Position */
+    .dark-mode-toggle {
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Fix Contact Icons */
+    .contact {
+        display: flex;
+        flex-direction: column;  /* Stack icons vertically */
+        align-items: center;
+        gap: 10px;
+    }
+
+    .contact img {
+        width: 40px;  /* Adjust icon sizes */
+    }
+
+}
