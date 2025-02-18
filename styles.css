@@ -502,7 +502,7 @@ body.experience-page {
 @media screen and (max-width: 768px) {
 
     body {
-        font-family: 'Comic Sans MS', 'Comic Sans', cursive !important;
+        font-family: 'Comic Sans MS', 'Comic Sans';
     }
     
 
@@ -548,7 +548,7 @@ body.experience-page {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 80px;  /* Moves content slightly down to make space for the logo */
+        padding-top: 162%;  /* Moves content slightly down to make space for the logo */
         overflow-y: auto;  /* Enables scrolling */
     }
     
@@ -560,6 +560,10 @@ body.experience-page {
         margin-top: 50px; /* Pushes the first box down */
         width: 90%;  /* Ensures proper width for mobile */
     }
+
+    .education-box:first-child {
+        margin-top: 10px; /* Ensure first box is fully visible */
+    }
     
     .education-box img {
         width: 80px;  /* Resizes the logo */
@@ -569,15 +573,17 @@ body.experience-page {
     
     body.education-page {
         overflow-y: auto;  /* Enables scrolling */
+        min-height: 100vh;  /* Ensures the full viewport height */
+        padding-top: 10px; /* Pushes the content slightly down */
+        scroll-behavior: smooth; /* Ensures smooth scrolling */
     }
 
     .experience-container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 120px;  /* Moves content slightly down to make space for the logo */
-        overflow-y: auto;  /* Enables scrolling if needed */
-        min-height: 100vh;
+        padding-top: 258%;  /* Moves content slightly down to make space for the logo */
+        overflow-y: auto;  /* Enables scrolling */
     }
     
     .experience-box {
@@ -585,16 +591,27 @@ body.experience-page {
         flex-direction: column;
         align-items: center;
         padding: 20px;
-        margin-top: 30px; /* Pushes the first box down */
+        margin-top: 50px; /* Pushes the first box down */
         width: 90%;  /* Ensures proper width for mobile */
+    }
+
+    .experience-box:first-child {
+        margin-top: 10px; /* Ensure first box is fully visible */
     }
     
     .experience-box img {
-        width: 80px;  /* Resizes the logo to fit */
+        width: 80px;  /* Resizes the logo */
         height: auto;
-        margin-top: 10px; /* Add space above logo */
-        margin-bottom: 15px;  /* Add space below */
+        margin-bottom: 15px;  /* Adds space below the logo */
     }
+    
+    body.experience-page {
+        overflow-y: auto;  /* Enables scrolling */
+        min-height: 100vh;  /* Ensures the full viewport height */
+        padding-top: 10px; /* Pushes the content slightly down */
+        scroll-behavior: smooth; /* Ensures smooth scrolling */
+    }
+
     
     body {
         overflow-y: auto;  /* Ensures scrolling */
@@ -602,7 +619,7 @@ body.experience-page {
         padding-bottom: 50px; /* Prevents last item from being cut off */
     }
 
-    }
+}
     
     
     
